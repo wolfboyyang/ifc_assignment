@@ -14,7 +14,7 @@ DATA;
 
 /* define the project and the creator meta data */
 #1 = IFCPROJECT('0YvctVUKr0kugbFTf53O9L', #2, 'Hello wall project', 
-     'Simple wall with door', $, $, $, (#20), #7);
+     'Simple wall with door and a wall with window', $, $, $, (#20), #7);
 #2 = IFCOWNERHISTORY(#3, #6, $, .ADDED., $, $, $, 1217620436);
 #3 = IFCPERSONANDORGANIZATION(#4, #5, $);
 #4 = IFCPERSON('ID001', 'Beetz', 'Jakob', $, $, $, $, $);
@@ -259,9 +259,9 @@ DATA;
 #322 = IFCDIRECTION((0., 1., 0.));
 #323 = IFCDIRECTION((0., 0., 1.));
 
-/* create the door leaf */
-#324 = IFCDOOR('1opOtYdH14bRb92uqKwIqS', #2, 'A common window', 
-       'Description of a standard door', $, #325, #330, $, 6.400, 0.7);
+/* create the window leaf */
+#324 = IFCWINDOW('1opOtYdH14bRb92uqKwIqS', #2, 'A common window', 
+       'Description of a standard window', $, #325, #330, $, 6.400, 0.7);
 #325 = IFCLOCALPLACEMENT(#298, #326);
 #326 = IFCAXIS2PLACEMENT3D(#327, #328, #329);
 #327 = IFCCARTESIANPOINT((0., 0., 1.000E-1));
